@@ -1,13 +1,15 @@
 #include <stdio.h>
+#include <math.h>
 
 int main()
 {
-    int salary, hours, money;
+    float salary, hours, money;
+    
     printf("what is your salary: ");
-    scanf("%d", &salary);
+    scanf("%f", &salary);
     printf("how many hours did you work this month: ");
-    scanf("%d", &hours);
+    scanf("%f", &hours);
     money = salary * hours;
-    printf("you earned %d", money);
+    printf("you earned: %.2f\n", money);
     return 0;
 }
